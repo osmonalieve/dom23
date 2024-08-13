@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+   font-family: sans-serif;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav a{
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+.header__nav{
+    display: flex;
+    gap: 30px;
+}
+
+.header__btn{
+    padding: 10px 20px;
+    border-radius: 17px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero__images{
+    width: 50%;
+}
+
+.hero__group{
+    display: flex;
+    align-items: start;
+    gap: 27px;
+}
+
+.hero__text h1{
+    width: 550px;
+    font-size: 70px;
+    padding: 10px 0;
+}
+
+.burger-icon{
+    display: none;
+}
+
+.hero__text p{
+    width: 560px;
+    font-size: 23px;
+    color: #12100CB2;
+    padding: 17px 0;
+}
+
+.hero__box span{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hero__box button{
+    width: 160px;
+    height: 46px;
+    border-radius: 20px;
+    background: #FFAE33;
+    font-weight: 700;
+    font-size: 18px;
+    color: #12100C;
+    border: none;
+}
+
+.hero__box span{
+    color: #12100CB2;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 890px) {
+    .header__nav {
+        display: none;
+    }
+
+    .burger-icon{
+        display: block;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .hero__text h1 {
+        width: 50%;
+        font-size: 60px;
+        padding: 2px 0;
+    }
+
+    .hero__text p {
+        width: 399px;
+        font-size: 19px;
+        padding: 13px 0;
+    }
+
+    .hero__images {
+        width: 35%;
+    }
+}
+
+@media (max-width: 780px) {
+        .hero {
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px 0;
+        }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero__images {
+        width: 65%;
+    }
+}
